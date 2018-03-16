@@ -1,0 +1,5 @@
+{
+  "port": 9000,
+  "root":"/Users/huguobo/workspace/lab/static-server/node-static-server",
+  "index": "index.html"
+}
