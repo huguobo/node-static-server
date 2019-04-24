@@ -28,6 +28,7 @@ class staticServer {
           this.respondFile(pathName, req, res);
         }
       } else {
+        console.log(err);
         this.respondNotFound(req, res);
       }
     });
@@ -85,7 +86,7 @@ class staticServer {
   }
   start() {
     http.createServer((req,res)=>{
-      const pathName = path.join(this.root,path.normalize(req.url));
+      const pathName = path.join(this.root, url.parse(path.normalize(req.url)).pathname );
       this.routerHandler(pathName,req,res);
     }).listen(this.port, err =>{
       if (err) {

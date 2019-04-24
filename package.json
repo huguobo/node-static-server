@@ -1,0 +1,23 @@
+{
+  "name": "static-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huguobo/node-static-server.git"
+  },
+  "author": "huguobo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huguobo/node-static-server/issues"
+  },
+  "homepage": "https://github.com/huguobo/node-static-server#readme",
+  "dependencies": {
+    "http-hash-router": "^1.1.0"
+  }
+}
